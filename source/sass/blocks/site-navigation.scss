@@ -1,0 +1,18 @@
+.site-navigation {
+  display: flex;
+  // width: 500px;
+  height: 100%;
+  margin-right: 127px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-navigation__item {
+  color: #ffffff;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.site-navigation__item:not(:last-of-type) {
+  margin-right: 36px;
+}

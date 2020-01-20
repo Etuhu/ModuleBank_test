@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-main-text;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1 0 auto;
+  background-color: $main-bg-color;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  appearance: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}

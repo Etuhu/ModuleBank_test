@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Детали платежа</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__search">
+        <button class="page-header__search-button button" type="button">Поиск</button>
+      </div>
+      <nav class="site-navigation">
+        <a href="#" class="site-navigation__item site-navigation__item--current">Деньги</a>
+        <a href="#" class="site-navigation__item">Контакты</a>
+        <a href="#" class="site-navigation__item">Услуги</a>
+      </nav>
+      <button class="page-header__new-action-button button" type="button"></button>
+      <button class="page-header__notifications-button button" type="button"></button>
+      <button class="page-header__vendor-name-button button" type="button">ООО «Родные просторы»</button>
+    </header>
+    <main>
+      <section class="payment-order">
+        <header class="payment-order__header">
+          <button class="payment-order__close-button button" type="button"></button>
+          <h1>Платежное поручение № 5241234 от 23.09.2015</h1>
+        </header>
+        <div class="payment-order__content">
+          <section class="payment-order__details payment-details">
+            <p class="payment-details__sum">– 23 500,00 &#8381;</p>
+            <p class="payment-details__invoice">со счета: Расчетный счет (***012345)</p>
+            <p class="payment-details__confirm">Исполнен, 21 июня 15:33</p>
+          </section>
+          <section class="payment-order__recipient">
+            <div class="recipient-data">
+              <h2 class="recipient-data__title">ООО "Родные просторы"</h2>
+              <ul class="recipient-data__list">
+                <li class="recipient-data__list-item">ИНН: 22341497819132</li>
+                <li class="recipient-data__list-item">Банк: ОАО Сбербанк</li>
+                <li class="recipient-data__list-item">БИК: 2352362365</li>
+                <li class="recipient-data__list-item">Счет: 40802810970010000395</li>
+              </ul>
+            </div>
+            <div class="bank-features">
+              <ul class="bank-features__list">
+                <li class="bank-features__list-item">Высокая финансовая устойчивость</li>
+                <li class="bank-features__list-item">Высокая благонадежность</li>
+                <li class="bank-features__list-item">Кредитоспособность 44,5 млрд &#8381;</li>
+              </ul>
+            </div>
+          </section>
+          <p class="payment-order__purpose">Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 &#8381;</p>
+          <div class="payment-order__commission">
+            <p>Комиссия банка: 70 р.</p>
+            <p>Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.</p>
+          </div>
+        </div>
+        <footer class="payment-order__footer">
+          <button class="footer-button footer-button--repeat-button button" type="button">Повторить</button>
+          <button class="footer-button footer-button--in-favourite-button button" type="button">В избранное</button>
+          <button class="footer-button footer-button--question-button button" type="button">Спросить</button>
+          <button class="footer-button footer-button--more-actions-button button" type="button">Действия</button>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

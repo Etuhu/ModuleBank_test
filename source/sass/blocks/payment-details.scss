@@ -1,0 +1,37 @@
+.payment-details__sum {
+  margin: 42px 0 1px;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 54px;
+  text-align: center;
+  color: #cf4545;
+}
+
+.payment-details__invoice {
+  margin: 0 0 11px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+
+  & span {
+    color: #828a96;
+  }
+}
+
+.payment-details__confirm {
+  width: 159px;
+  padding: 3px 8px 3px 11px;
+  margin: 0 auto;
+  border-radius: 125px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #81c624;
+
+  & span {
+    text-transform: uppercase;
+  }
+}

@@ -13,25 +13,29 @@
         <button class="page-header__search-button button" type="button">Поиск</button>
       </div>
       <nav class="site-navigation">
-        <a href="#" class="site-navigation__item site-navigation__item--current">Деньги</a>
-        <a href="#" class="site-navigation__item">Контакты</a>
-        <a href="#" class="site-navigation__item">Услуги</a>
+        <ul class="site-navigation__list">
+          <li class="site-navigation__list-item site-navigation__list-item--current"><a href="#" class="site-navigation__link">Деньги</a></li>
+          <li class="site-navigation__list-item"><a href="#" class="site-navigation__link">Контакты</a></li>
+          <li class="site-navigation__list-item"><a href="#" class="site-navigation__link">Услуги</a></li>
+        </ul>
       </nav>
       <button class="page-header__new-action-button button" type="button"></button>
-      <button class="page-header__notifications-button button" type="button"></button>
-      <button class="page-header__vendor-name-button button" type="button">ООО «Родные просторы»</button>
+      <div class="page-header__right-column">
+        <button class="page-header__notifications-button button" type="button"></button>
+        <a href="#" class="page-header__vendor-name">ООО «Родные просторы»</a>
+      </div>
     </header>
     <main>
       <section class="payment-order">
         <header class="payment-order__header">
           <button class="payment-order__close-button button" type="button"></button>
-          <h1>Платежное поручение № 5241234 от 23.09.2015</h1>
+          <h1 class="payment-order__title">Платежное поручение № 5241234 от 23.09.2015</h1 class="payment-order__header">
         </header>
         <div class="payment-order__content">
           <section class="payment-order__details payment-details">
-            <p class="payment-details__sum">– 23 500,00 &#8381;</p>
-            <p class="payment-details__invoice">со счета: Расчетный счет (***012345)</p>
-            <p class="payment-details__confirm">Исполнен, 21 июня 15:33</p>
+            <p class="payment-details__sum">– 23 500,00 ₽</p>
+            <p class="payment-details__invoice"><span>со счета:</span> Расчетный счет (***012345)</p>
+            <p class="payment-details__confirm"><span>Исполнен,</span> 21 июня 15:33</p>
           </section>
           <section class="payment-order__recipient">
             <div class="recipient-data">
@@ -45,23 +49,23 @@
             </div>
             <div class="bank-features">
               <ul class="bank-features__list">
-                <li class="bank-features__list-item">Высокая финансовая устойчивость</li>
-                <li class="bank-features__list-item">Высокая благонадежность</li>
-                <li class="bank-features__list-item">Кредитоспособность 44,5 млрд &#8381;</li>
+                <li class="bank-features__list-item"><a href="#" class="bank-features__link bank-features__link--stability">Высокая финансовая устойчивость</a></li>
+                <li class="bank-features__list-item"><a href="#" class="bank-features__link bank-features__link--credibility">Высокая благонадежность</a></li>
+                <li class="bank-features__list-item"><a href="#" class="bank-features__link bank-features__link--creditworthiness">Кредитоспособность 44,5 млрд &#8381;</a></li>
               </ul>
             </div>
           </section>
-          <p class="payment-order__purpose">Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 &#8381;</p>
+          <p class="payment-order__purpose">Оплата за партию ромашек и одуванчиков по договору 14023&#8209;023 от 14.05.2015 г. Сумма 11430&#8209;00. В том числе НДС 18% - 1450,00 &#8381;</p>
           <div class="payment-order__commission">
             <p>Комиссия банка: 70 р.</p>
             <p>Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.</p>
           </div>
         </div>
         <footer class="payment-order__footer">
-          <button class="footer-button footer-button--repeat-button button" type="button">Повторить</button>
-          <button class="footer-button footer-button--in-favourite-button button" type="button">В избранное</button>
-          <button class="footer-button footer-button--question-button button" type="button">Спросить</button>
-          <button class="footer-button footer-button--more-actions-button button" type="button">Действия</button>
+          <a href="#" class="footer-link footer-link--repeat-link">Повторить</a>
+          <a href="#" class="footer-link footer-link--in-favourite-link">В избранное</a>
+          <a href="#" class="footer-link footer-link--question-link">Спросить</a>
+          <a href="#" class="footer-link footer-link--more-actions-link">Действия</a>
         </footer>
       </section>
     </main>

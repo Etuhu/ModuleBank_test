@@ -1,0 +1,55 @@
+.bank-features {
+  width: 40%;
+}
+
+.bank-features__list {
+  padding-left: 26px;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.bank-features__list-item {
+  margin-bottom: 28px;
+}
+
+.bank-features__link {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  font-size: 8px;
+  line-height: 11px;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: #2773B9;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.bank-features__link--stability::after {
+  right: -51px;
+  top: -12px;
+  background-image: url("../img/88-percent.png");
+}
+
+.bank-features__link--credibility::after {
+  right: -52px;
+  top: -11px;
+  background-image: url("../img/100-percent.png");
+}
+
+.bank-features__link--creditworthiness::after {
+  right: -51px;
+  top: -8px;
+  background-image: url("../img/first-class.png");
+}
+

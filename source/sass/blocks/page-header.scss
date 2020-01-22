@@ -1,5 +1,6 @@
 .page-header {
   position: fixed;
+  z-index: 110;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -9,32 +10,49 @@
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.159392);
 }
 
+.page-header__logo-link {
+  position: absolute;
+  top: 17px;
+  left: 21px;
+  display: block;
+  z-index: 120;
+}
+
 .page-header__search {
-  width: 179px;
+  position: relative;
+  width: 168px;
   height: 100%;
-  padding-top: 21px;
+  padding-top: 18px;
   padding-left: 20px;
-  margin-right: 58px;
-  // background-color: #ffffff;
-  background: url("../img/qr-code.svg") left 20px center no-repeat, url("../img/header-search-bg.svg") center no-repeat;
-  // background-position: left 20px center;
-  // background-repeat: no-repeat;
+  margin-right: 69px;
+  background-color: #ffffff;
   box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.20287);
+
+  &::after {
+    position: absolute;
+    top: -1px;
+    right: -42px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 30px solid transparent;
+    border-left: 12px solid #ffffff;
+  }
 }
 
 .page-header__search-button {
   width: 80px;
-  height: 20px;
+  height: 25px;
   margin-left: 51px;
-  padding-left: 28px;
+  padding-left: 25px;
   border: none;
   color: #2b2b2b;
   text-transform: uppercase;
   background-color: transparent;
   background-image: url("../img/loupe.svg");
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 23%;
+  background-position: left 1px top 2px;;
+  background-size: 22.5%;
 }
 
 .page-header__new-action-button {
@@ -42,6 +60,14 @@
   height: 42px;
   margin-top: 9px;
   background: url("../img/circle.svg") center no-repeat;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+  }
 }
 
 .page-header__notifications-button {
@@ -51,6 +77,12 @@
   margin-top: 17px;
   margin-right: 45px;
   background: url("../img/bell.svg") center no-repeat;
+  cursor: pointer;
+
+  &:hover::after,
+  &:focus::after {
+    transform: scale(1.2);
+  }
 
   &::after {
     content: "2";
@@ -72,6 +104,7 @@
 }
 
 .page-header__vendor-name {
+  position: relative;
   display: inline-block;
   width: 240px;
   height: 17px;
@@ -81,6 +114,34 @@
   color: #ffffff;
   text-transform: uppercase;
   background: url("../img/house.svg") left center no-repeat;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 1px;
+    top: 8px;
+    background-color: #ffffff;
+    border-radius: 90px;
+  }
+
+  &::before {
+    right: 19px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    right: 16px;
+    transform: rotate(-45deg);
+  }
 }
 
 .page-header__right-column {

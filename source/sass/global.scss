@@ -1,12 +1,13 @@
 html {
   height: 100%;
+  background-color: #edeff1;
 }
 
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-width: 320px;
+  min-width: 1024px;
   height: 100%;
 
   font-family: $font-main;

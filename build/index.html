@@ -11,7 +11,9 @@
     <header class="page-header">
       <a href="#" class="page-header__logo-link"><img src="img/qr-code.svg" alt="Модуль-банк" class="page-header__logo" width="24" height="24"></a>
       <div class="page-header__search">
-        <button class="page-header__search-button button" type="button">Поиск</button>
+        <form class="page-header__search-form" action="#" name="search-form" method="post">
+          <input class="page-header__search-field" type="search" id="search-field" name="search-field" placeholder="Поиск" aria-label="Поиск по сайту">
+        </form>
       </div>
       <nav class="site-navigation">
         <ul class="site-navigation__list">
@@ -20,16 +22,16 @@
           <li class="site-navigation__list-item site-navigation__list-item--services"><a href="#" class="site-navigation__link">Услуги</a></li>
         </ul>
       </nav>
-      <button class="page-header__new-action-button button" type="button"></button>
+      <button class="page-header__new-action-button button" type="button" aria-label="Дополнительные функции"></button>
       <div class="page-header__right-column">
-        <button class="page-header__notifications-button button" type="button"></button>
+        <button class="page-header__notifications-button button" type="button" aria-label="Уведомления"></button>
         <a href="#" class="page-header__vendor-name">ООО «Родные просторы»</a>
       </div>
     </header>
     <main>
       <section class="payment-order">
         <header class="payment-order__header">
-          <button class="payment-order__close-button button" type="button"></button>
+          <button class="payment-order__close-button button" type="button" aria-label="Закрыть окно"></button>
           <h1 class="payment-order__title">Платежное поручение № 5241234 от 23.09.2015</h1>
         </header>
         <div class="payment-order__content">
@@ -63,10 +65,12 @@
           </div>
         </div>
         <footer class="payment-order__footer">
-          <a href="#" class="footer-link footer-link--repeat-link">Повторить</a>
-          <a href="#" class="footer-link footer-link--in-favourite-link">В избранное</a>
-          <a href="#" class="footer-link footer-link--question-link">Спросить</a>
-          <a href="#" class="footer-link footer-link--more-actions-link">Действия</a>
+          <div class="payment-order__footer-wrapper">
+            <a href="#" class="footer-link footer-link--repeat-link">Повторить</a>
+            <a href="#" class="footer-link footer-link--in-favourite-link">В избранное</a>
+            <a href="#" class="footer-link footer-link--question-link">Спросить</a>
+            <a href="#" class="footer-link footer-link--more-actions-link">Действия</a>
+          </div>
         </footer>
       </section>
     </main>

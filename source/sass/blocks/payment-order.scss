@@ -90,7 +90,30 @@
   min-height: 192px;
   margin-left: 20.4%;
   background-color: #ffffff;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.390682), 0px 3px 10px rgba(0, 0, 0, 0.0869282);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.390682), 0 3px 10px rgba(0, 0, 0, 0.0869282);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: -32px;
+    right: -29px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 2px;
+    top: 12px;
+    right: -5px;
+    transform: rotate(45deg);
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0), inset 0 2px 0 rgba(0, 0, 0, 0.0869282);
+    background-color: #ffffff;
+  }
 }
 
 .payment-order__purpose {
@@ -104,7 +127,7 @@
   color: #2b2b2b;
   background: #f2f2f2;
   mix-blend-mode: normal;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 4px 15px rgba(0, 0, 0, 0.0869282), 0px 2px 3px rgba(0, 0, 0, 0.0651891);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102), 0 4px 15px rgba(0, 0, 0, 0.0869282), 0 2px 3px rgba(0, 0, 0, 0.0651891);
 }
 
 .payment-order__commission {
@@ -125,17 +148,20 @@
   position: fixed;
   z-index: 100;
   bottom: 0;
-  display: flex;
-  align-items: center;
   width: 70.3%;
   min-width: 900px;
   height: 60px;
-  padding-left: 14.4%;
-  padding-right: 10%;
   background-color: #ffffff;
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.239102), 0px 0px 15px rgba(0, 0, 0, 0.0869282);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.239102), 0 0 15px rgba(0, 0, 0, 0.0869282);
 
   @media (max-width: $tablet-width) {
     position: absolute;
   }
+}
+
+.payment-order__footer-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 20.4%;
 }

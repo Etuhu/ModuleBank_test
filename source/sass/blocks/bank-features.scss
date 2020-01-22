@@ -1,5 +1,24 @@
 .bank-features {
+  position: relative;
   width: 40%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 28px;
+    top: 0;
+    right: 28px;
+    background-color: white;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0), 1px 0 0 rgba(0, 0, 0, 0.0869282);
+  }
+
+  &::after {
+    top: 13px;
+    right: 14px;
+    transform: rotate(90deg);
+  }
 }
 
 .bank-features__list {
@@ -20,7 +39,7 @@
   line-height: 11px;
   text-decoration: underline;
   text-decoration-style: dotted;
-  color: #2773B9;
+  color: #2773b9;
   text-align: center;
 
   &:hover,
@@ -57,4 +76,3 @@
   top: -8px;
   background-image: url("../img/first-class.png");
 }
-
